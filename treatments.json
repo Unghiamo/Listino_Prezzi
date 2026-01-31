@@ -139,26 +139,6 @@
       "icon": "icons/ciglia.svg",
       "sections": [
         {
-          "title": "Laminazione ciglia",
-          "fromPrice": 45,
-          "treatments": [
-            {
-              "name": "Laminazione ciglia 1ª seduta",
-              "price": 60,
-              "duration": "60 min",
-              "description": "La laminazione ciglia è un trattamento estetico che esalta le ciglia naturali: le incurva, ispessisce e nutre, creando un effetto \"lifting\" e \"mascara\" prolungato. \n\nLe ciglia vengono posizionate su un bigodino di silicone e trattate con prodotti che le modellano e le sollevano dalla base. \nSi può applicare una tinta per intensificare il colore, simulando l'effetto mascara. \nSi conclude con oli nutrienti per sigillare il trattamento e renderle lucide e forti. \n\nL'effetto dura circa 4-6 settimane, seguendo il ciclo di ricrescita delle ciglia. \nÈ un'ottima opzione per chi non vuole extension o non vuole dipendere dal piegaciglia e dal mascara quotidiano.",
-              "image": "logo.png"
-            },
-            {
-              "name": "Laminazione ciglia refill*",
-              "price": 45,
-              "duration": "60 min",
-              "description": "Si intende refill se effettuato tra le 6 e le 8 settimane dalla seduta precedente.",
-              "image": "logo.png"
-            }
-          ]
-        },
-        {
           "title": "PMU sopracciglia / labbra",
           "fromPrice": 100,
           "treatments": [
@@ -233,6 +213,26 @@
       "label": "Estetica",
       "icon": "icons/viso.svg",
       "sections": [
+        {
+          "title": "Laminazione ciglia",
+          "fromPrice": 45,
+          "treatments": [
+            {
+              "name": "Laminazione ciglia 1ª seduta",
+              "price": 60,
+              "duration": "60 min",
+              "description": "La laminazione ciglia è un trattamento estetico che esalta le ciglia naturali: le incurva, ispessisce e nutre, creando un effetto \"lifting\" e \"mascara\" prolungato. \n\nLe ciglia vengono posizionate su un bigodino di silicone e trattate con prodotti che le modellano e le sollevano dalla base. \nSi può applicare una tinta per intensificare il colore, simulando l'effetto mascara. \nSi conclude con oli nutrienti per sigillare il trattamento e renderle lucide e forti. \n\nL'effetto dura circa 4-6 settimane, seguendo il ciclo di ricrescita delle ciglia. \nÈ un'ottima opzione per chi non vuole extension o non vuole dipendere dal piegaciglia e dal mascara quotidiano.",
+              "image": "logo.png"
+            },
+            {
+              "name": "Laminazione ciglia refill*",
+              "price": 45,
+              "duration": "60 min",
+              "description": "Si intende refill se effettuato tra le 6 e le 8 settimane dalla seduta precedente.",
+              "image": "logo.png"
+            }
+          ]
+        },
         {
           "title": "Epilazione viso",
           "fromPrice": 5,
