@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="it">
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Unghiamo | Elisa Pignatti</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+
+    <!-- Umami Analytics -->
+  <script
+    defer
+    src="https://cloud.umami.is/script.js"
+    data-website-id="6cfee913-fc72-43e3-b317-1d496ce8d536">
+  </script>
+
+</head>
+
+
+<body>
+
+  <header class="header">
+    <img src="logo.png" alt="Logo Unghiamo" class="logo">
+    <h1 class="site-title">Unghiamo | Elisa Pignatti</h1>
+    <div class="address">
+      Via Giacomo Leopardi, 39 | 41019 Soliera (MO)
+    </div>
+  </header>
+
+  <!-- FILTRI -->
+  <nav class="filters" id="filters"></nav>
+
+  <!-- TRATTAMENTI -->
+  <main class="treatments" id="treatments"></main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div>Contattami!</div>
+  </footer>
+
+  <!-- MODAL TRATTAMENTO -->
+  <div class="modal" id="treatmentModal">
+    <div class="modal-content">
+      <button class="modal-close" id="closeModal">×</button>
+
+      <img id="modalImage" class="modal-image" src="" alt="">
+
+      <h2 id="modalTitle"></h2>
+      <div class="modal-meta" id="modalMeta"></div>
+      <p id="modalDescription"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+
+  <footer class="site-footer">
+    <a
+      href="https://www.instagram.com/unghiamo_"
+      target="_blank"
+      onclick="window.umami && umami.track('Click Instagram')"
+      class="instagram-link"
+      aria-label="Instagram"
+    >
+      <img src="icons/icons8-instagram.svg" alt="Instagram">
+    </a>
+
+    <a
+      href="https://wa.me/393515378793"
+      class="whatsapp-float"
+      onclick="window.umami && umami.track('Click WhatsApp')"
+      target="_blank"
+      aria-label="Contatta su WhatsApp"
+    >
+      <img src="icons/icons8-whatsapp.svg" alt="WhatsApp">
+    </a>
+
+  </footer>
+
+
+
+
+</body>
+
+</html>

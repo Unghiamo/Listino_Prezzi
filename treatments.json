@@ -1,0 +1,320 @@
+{
+  "categories": [
+    {
+      "id": "unghie",
+      "label": "Manicure e Pedicure",
+      "icon": "icons/unghia.svg",
+      "sections": [
+        {
+          "title": "Manicure",
+          "fromPrice": 20,
+          "treatments": [
+            {
+              "name": "Kombi Manicure",
+              "price": 20,
+              "duration": "30 min",
+              "description": "La kombi manicure è una tecnica avanzata di preparazione a secco dell'unghia che unisce l'uso della fresa e le forbicine per cuticole. \n\nPermette una pulizia profonda del giro cuticole, il sollevamento e la rimozione precisa della pelle in eccesso senza acqua, ideale per l'applicazione di smalto semipermanente o gel.",
+              "image": "logo.png"
+            },
+            {
+              "name": "Manicure ad olio",
+              "price": 25,
+              "duration": "30 min",
+              "description": "La manicure ad olio è un trattamento estetico intensivo che utilizza oli specifici per nutrire, idratare e ammorbidire le cuticole. \n\nSpesso integrata nella kombi manicure per lavorare la pelle con maggiore precisione, garantendo un risultato lucente, idratato e levigato. \n\nConsigliata anche per manicure maschili.",
+              "image": "logo.png"
+            }
+          ]
+        },
+        {
+          "title": "Semipermanente",
+          "fromPrice": 34,
+          "treatments": [
+            {
+              "name": "Semipermanente",
+              "price": 34,
+              "duration": "60 min",
+              "description": "Il semipermanente è uno smalto ibrido, a metà tra quello tradizionale e il gel, che si applica sull'unghia naturale e si asciuga sotto lampada LED. \n\nGarantisce alta brillantezza e resistenza alle sbeccature, mantenendo l'unghia naturale senza bisogno di ricostruzioni e allungamenti.",
+              "image": "logo.png"
+            },
+            {
+              "name": "Semipermanente rinforzato",
+              "price": 38,
+              "duration": "60 min",
+              "description": "Il semipermanente rinforzato è un trattamento che, grazie a una base specifica, dona maggiore solidità all’unghia naturale, migliorandone l’aspetto e la resistenza, per un risultato curato, uniforme e naturale.",
+              "image": "logo.png"
+            },
+            {
+              "name": "Semipermanente piedi",
+              "price": 40,
+              "duration": "60 min",
+              "description": "I vantaggi rispetto allo smalto classico  sono brillantezza duratura, resistenza, asciugatura istantanea e piedi in ordine dalle 4 alle 6 settimane.\n\nNon vengono trattati calli.",
+              "image": "logo.png"
+            },
+            {
+              "name": "Rimozione",
+              "price": 8,
+              "duration": "15 min",
+              "description": "La rimozione è il processo tecnico di eliminazione dello smalto dalla lamina ungueale, effettuato tramite limatura delicata.\n\nNon comprende la manicure",
+              "image": "logo.png"
+            }
+          ]
+        },
+        {
+          "title": "Gel",
+          "fromPrice": 50,
+          "notes": {
+            "": "Tutti i trattamenti sono comprensivi di nail art base. \n\nPer nail art più complesse potrebbe essere richiesto un supplemento. \nIl french è compreso nel prezzo solo se eseguito su base gel. \nTutti i refill sono da intendersi correttivi, poichè lavoro solo con tecnica slim, natural slim e balance."
+          },
+          "treatments": [
+            {
+              "name": "Copertura in gel",
+              "price": 50,
+              "duration": "75 min",
+              "description": "La copertura in gel è un trattamento estetico che rinforza l'unghia naturale stendendo uno strato di gel costruttore, senza allungarla. \nSi effettua su unghie prive di prodotto precedente. \n\nProtegge le unghie fragili e corregge le imperfezioni dell'unghia, con un effetto naturale e resistente agli urti. \n\nSi differenzia dalla ricostruzione perché mantiene la lunghezza naturale.",
+              "image": "logo.png"
+            },
+            {
+              "name": "Refill corto",
+              "price": 50,
+              "duration": "75 min",
+              "description": "Lunghezza <1,5 cm. \nDa effettuare ogni mese, per coprire la ricrescita naturale.",
+              "image": "logo.png"
+            },
+            {
+              "name": "Refill medio",
+              "price": 55,
+              "duration": "90 min",
+              "description": "Lunghezza tra 1,5 cm e 2 cm. \nDa effettuare ogni mese, per coprire la ricrescita naturale.",
+              "image": "logo.png"
+            },
+            {
+              "name": "Refill lungo",
+              "price": 60,
+              "duration": "105 min",
+              "description": "Lunghezza >2 cm. \nDa effettuare ogni mese, per coprire la ricrescita naturale.",
+              "image": "logo.png"
+            },
+            {
+              "name": "Ricostruzione",
+              "price": "da 65",
+              "duration": "90 min",
+              "description": "La ricostruzione unghie è un trattamento estetico professionale finalizzato all'allungamento delle unghie naturali. \n\nQuesta tecnica corregge le imperfezioni, rinforza le unghie fragili e risolve l'onicofagia.",
+              "image": "logo.png"
+            },
+            {
+              "name": "Riparazione 1 unghia",
+              "price": "da 2",
+              "duration": "10 min",
+              "description": "Riparazione di 1 unghia in fase di refill 2€. \nCon più di 3 unghie da riparare in fase di refill il costo sarà pari a quello di una ricostruzione. \n\nRiparazione di 1 unghia con appuntamento specifico 4€.",
+              "image": "logo.png"
+            },
+            {
+              "name": "Rimozione",
+              "price": 10,
+              "duration": "15 min",
+              "description": "La rimozione è il processo tecnico di eliminazione del gel dalla lamina ungueale, effettuato tramite limatura delicata.\n\nNon comprende la manicure.",
+              "image": "logo.png"
+            }
+          ]
+        },
+        {
+          "title": "Muretto o stiletto",
+          "fromPrice": 90,
+          "treatments": [
+            {
+              "name": "Muretto o stiletto",
+              "price": "da 90",
+              "duration": "150 min",
+              "description": "La ricostruzione muretto (o French muretto) è una tecnica avanzata di nail art che crea una french tridimensionale direttamente in struttura. \n\nConsiste nel costruire un bordo netto e rialzato (\"muretto\"), separando nettamente il letto ungueale dalla punta bianca o colorata, garantendo una smile-line perfetta.",
+              "image": "logo.png"
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "specializzati",
+      "label": "Dermopigmentazione",
+      "icon": "icons/ciglia.svg",
+      "sections": [
+        {
+          "title": "Laminazione ciglia",
+          "fromPrice": 45,
+          "treatments": [
+            {
+              "name": "Laminazione ciglia 1ª seduta",
+              "price": 60,
+              "duration": "60 min",
+              "description": "La laminazione ciglia è un trattamento estetico che esalta le ciglia naturali: le incurva, ispessisce e nutre, creando un effetto \"lifting\" e \"mascara\" prolungato. \n\nLe ciglia vengono posizionate su un bigodino di silicone e trattate con prodotti che le modellano e le sollevano dalla base. \nSi può applicare una tinta per intensificare il colore, simulando l'effetto mascara. \nSi conclude con oli nutrienti per sigillare il trattamento e renderle lucide e forti. \n\nL'effetto dura circa 4-6 settimane, seguendo il ciclo di ricrescita delle ciglia. \nÈ un'ottima opzione per chi non vuole extension o non vuole dipendere dal piegaciglia e dal mascara quotidiano.",
+              "image": "logo.png"
+            },
+            {
+              "name": "Laminazione ciglia refill*",
+              "price": 45,
+              "duration": "60 min",
+              "description": "Si intende refill se effettuato tra le 6 e le 8 settimane dalla seduta precedente.",
+              "image": "logo.png"
+            }
+          ]
+        },
+        {
+          "title": "PMU sopracciglia / labbra",
+          "fromPrice": 100,
+          "treatments": [
+            {
+              "name": "PMU sopracciglia / labbra",
+              "price": 200,
+              "duration": "120 min",
+              "description": "PMU è l'acronimo di Permanent Make-Up (trucco permanente), una tecnica di dermopigmentazione estetica che introduce pigmenti nella pelle per definire, correggere o valorizzare sopracciglia, occhi e labbra, offrendo un effetto duraturo ma semipermanente che sbiadisce nel tempo. \n\nI pigmenti sono bioassorbibili, sbiadiscono nel tempo e permettono modifiche estetiche. \n\nLa profondità di inserimento è minore rispetto a un tatuaggio tradizionale, rendendo l'effetto più naturale e meno indelebile.",
+              "image": "logo.png"
+            },
+            {
+              "name": "1° ritocco",
+              "price": 100,
+              "duration": "90 min",
+              "description": "Da effettuare dopo 6 settimane dalla prima seduta.",
+              "image": "logo.png"
+            },
+            {
+              "name": "Ritocco annuale",
+              "price": 170,
+              "duration": "90/120 min",
+              "description": "Ritocco annuale per ravvivare il colore e la definizione.",
+              "image": "logo.png"
+            }
+          ]
+        },
+        {
+          "title": "PMU eyeliner",
+          "fromPrice": 100,
+          "treatments": [
+            {
+              "name": "PMU eyeliner",
+              "price": 180,
+              "duration": "120 min",
+              "description": "Per definire e intensificare lo sguardo. \n\nPMU è l'acronimo di Permanent Make-Up (trucco permanente), una tecnica di dermopigmentazione estetica che introduce pigmenti nella pelle per definire, correggere o valorizzare sopracciglia, occhi e labbra, offrendo un effetto duraturo ma semipermanente che sbiadisce nel tempo.\n\nI pigmenti sono bioassorbibili, sbiadiscono nel tempo e permettono modifiche estetiche. \n\nLa profondità di inserimento è minore rispetto a un tatuaggio tradizionale, rendendo l'effetto più naturale e meno indelebile.",
+              "image": "logo.png"
+            },
+            {
+              "name": "1° ritocco",
+              "price": 100,
+              "duration": "90 min",
+              "description": "Da effettuare dopo 6 settimane dalla prima seduta.",
+              "image": "logo.png"
+            },
+            {
+              "name": "Ritocco annuale",
+              "price": 150,
+              "duration": "90/120 min",
+              "description": "Ritocco annuale per ravvivare il colore e ripristinare la definizione.",
+              "image": "logo.png"
+            }
+          ]
+        },
+        {
+          "title": "Fine Line Tattoo",
+          "fromPrice": 50,
+          "treatments": [
+            {
+              "name": "Fine Line tattoo",
+              "price": "da 50",
+              "duration": "da 30 min",
+              "description": "Il fine line tattoo è uno stile di tatuaggio moderno, caratterizzato da linee estremamente sottili, delicate e precise, utilizzando aghi a punta singola. \n\nQuesto stile minimalista si concentra sulla definizione netta del disegno, evitando sfumature pesanti o riempimenti marcati. \nI disegni sono essenziali, spesso di piccole o medie dimensioni. \n\nSebbene delicati, i fine line possono durare nel tempo se eseguiti correttamente, ma la loro sottigliezza richiede una cura attenta.",
+              "image": "logo.png"
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "estetica",
+      "label": "Estetica",
+      "icon": "icons/viso.svg",
+      "sections": [
+        {
+          "title": "Epilazione viso",
+          "fromPrice": 5,
+          "treatments": [
+            {
+              "name": "Epilazione sopracciglia",
+              "price": 5,
+              "duration": "10 min",
+              "description": "L'epilazione delle sopracciglia è un trattamento estetico di rimozione dei peli superflui che estirpa il pelo dal follicolo, garantendo una ricrescita più lenta e indebolita rispetto alla semplice depilazione (lametta). \n\nQuesta tecnica mira a modellare, definire l'arcata sopraccigliare e valorizzare lo sguardo.",
+              "image": "logo.png"
+            },
+            {
+              "name": "Epilazione baffetti",
+              "price": 5,
+              "duration": "10 min",
+              "description": "Epilazione delicata dei baffetti.",
+              "image": "logo.png"
+            },
+            {
+              "name": "Epilazione viso",
+              "price": 10,
+              "duration": "15 min",
+              "description": "Epilazione completa del viso.",
+              "image": "logo.png"
+            }
+          ]
+        },
+        {
+          "title": "Epilazione corpo",
+          "fromPrice": 15,
+          "treatments": [
+            {
+              "name": "Inguine totale",
+              "price": 30,
+              "duration": "30 min",
+              "description": "L'epilazione inguine totale con cera brasiliana è un trattamento di rimozione totale dei peli nell'area intima (pube, labbra, zona perianale), effettuato senza strisce di tessuto. \n\nUtilizza una speciale cera che ingloba il pelo, agendo in modo più delicato e meno doloroso rispetto alla ceretta classica. \n\nLa cera brasiliana si applica direttamente e si rimuove una volta solidificata, senza aderire alla pelle. \n\nÈ perfetta per zone delicate perché riduce il rischio di peli incarniti e irritazioni. \nIl risultato dura solitamente tra le 4 e le 6 settimane, indebolendo il pelo nel tempo.\n\nÈ efficace anche su peli corti.",
+              "image": "logo.png"
+            },
+            {
+              "name": "Inguine bikini",
+              "price": 25,
+              "duration": "30 min",
+              "description": "L'epilazione inguine bikini con cera brasiliana è un trattamento di rimozione dei peli nell'area intima (Esterno inguine, pube, labbra esterne), effettuato senza strisce di tessuto. \n\nUtilizza una speciale cera che ingloba il pelo, agendo in modo più delicato e meno doloroso rispetto alla ceretta classica. \n\nLa cera brasiliana si applica direttamente e si rimuove una volta solidificata, senza aderire alla pelle. \n\nÈ perfetta per zone delicate perché riduce il rischio di peli incarniti e irritazioni. \nIl risultato dura solitamente tra le 4 e le 6 settimane, indebolendo il pelo nel tempo.\n\nÈ efficace anche su peli corti. ",
+              "image": "logo.png"
+            },
+            {
+              "name": "Ascelle",
+              "price": 15,
+              "duration": "15 min",
+              "description": "L'epilazione ascelle cera brasiliana è un trattamento di rimozione totale dei peli effettuato senza strisce di tessuto. \n\nUtilizza una speciale cera che ingloba il pelo, agendo in modo più delicato e meno doloroso rispetto alla ceretta classica. \n\nLa cera brasiliana si applica direttamente e si rimuove una volta solidificata, senza aderire alla pelle. \n\nÈ perfetta per zone delicate perché riduce il rischio di peli incarniti e irritazioni. \nIl risultato dura solitamente tra le 4 e le 6 settimane, indebolendo il pelo nel tempo.\n\nÈ efficace anche su peli corti. ",
+              "image": "logo.png"
+            }
+          ]
+        },
+        {
+          "title": "Massaggi",
+          "fromPrice": 45,
+          "treatments": [
+            {
+              "name": "Massaggio relax schiena 25′",
+              "price": 45,
+              "duration": "25 min",
+              "description": "Il massaggio relax schiena è un trattamento manuale volto a sciogliere le tensioni muscolari, alleviando contratture e stress accumulati su dorsali, zona lombare e cervicale. \n\nAttraverso manovre lente, sfioramenti e impastamenti, promuove il rilassamento psicofisico, migliora la circolazione sanguigna e dona un immediato senso di benessere e sollievo.",
+              "image": "logo.png"
+            },
+            {
+              "name": "Massaggio relax 50′",
+              "price": 65,
+              "duration": "50 min",
+              "description": "Il massaggio relax total body è una pratica olistica che coinvolge l'intero corpo, dai piedi alla testa, utilizzando manovre lente, avvolgenti e delicate per sciogliere le tensioni muscolari, ridurre lo stress e stimolare la circolazione sanguigna. \n\nMira a ripristinare l'equilibrio psicofisico e il benessere profondo.",
+              "image": "logo.png"
+            },
+            {
+              "name": "Massaggio eminfatico gambe 35′",
+              "price": 55,
+              "duration": "35 min",
+              "description": "Il massaggio emolinfatico gambe è una tecnica olistica e modellante che, attraverso manipolazioni lente, ritmiche e profonde, stimola la circolazione sanguigna e linfatica. \n\nAgisce efficacemente contro la ritenzione idrica, la cellulite, il gonfiore e la sensazione di pesantezza, favorendo il drenaggio dei liquidi dai tessuti e l'eliminazione delle tossine.",
+              "image": "logo.png"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
