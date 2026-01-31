@@ -225,7 +225,7 @@
               "image": "logo.png"
             },
             {
-              "name": "Laminazione ciglia refill*",
+              "name": "Laminazione ciglia refill",
               "price": 45,
               "duration": "60 min",
               "description": "Si intende refill se effettuato tra le 6 e le 8 settimane dalla seduta precedente.",
@@ -317,4 +317,5 @@
       ]
     }
   ]
+
 }
