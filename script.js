@@ -99,7 +99,7 @@ function buildTreatments(categories) {
         notesWrap.className = "section-note";
         Object.entries(section.notes).forEach(([key, text]) => {
           const p = document.createElement("div");
-          p.textContent = `${key} ${text}`;
+          p.innerHTML = `${key} ${text.replace(/\n/g, "<br>")}`;
           notesWrap.appendChild(p);
         });
         content.appendChild(notesWrap);
