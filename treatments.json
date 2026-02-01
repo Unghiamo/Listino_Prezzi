@@ -63,7 +63,7 @@
           "title": "Gel",
           "fromPrice": 50,
           "notes": {
-            "": "Tutti i trattamenti sono comprensivi di nail art base. \n\nPer nail art più complesse potrebbe essere richiesto un supplemento. \nIl french è compreso nel prezzo solo se eseguito su base gel. \nTutti i refill sono da intendersi correttivi, poichè lavoro solo con tecnica slim, natural slim e balance."
+            "": "Tutti i trattamenti sono comprensivi di nail art base. <br>Per nail art più complesse potrebbe essere richiesto un supplemento. <br>Il french è compreso nel prezzo solo se eseguito su base gel. <br>Tutti i refill sono da intendersi correttivi, poichè lavoro solo con tecnica slim, natural slim e balance."
           },
           "treatments": [
             {
@@ -146,7 +146,7 @@
               "name": "PMU sopracciglia / labbra",
               "price": 200,
               "duration": "120 min",
-              "description": "PMU è l'acronimo di Permanent Make-Up (trucco permanente), una tecnica di dermopigmentazione estetica che introduce pigmenti nella pelle per definire, correggere o valorizzare sopracciglia, occhi e labbra, offrendo un effetto duraturo ma semipermanente che sbiadisce nel tempo. \n\nI pigmenti sono bioassorbibili, sbiadiscono nel tempo e permettono modifiche estetiche. \n\nLa profondità di inserimento è minore rispetto a un tatuaggio tradizionale, rendendo l'effetto più naturale e meno indelebile.",
+              "description": "PMU è l'acronimo di Permanent Make-Up (trucco permanente), una tecnica di dermopigmentazione estetica che introduce pigmenti nella pelle per definire, correggere o valorizzare sopracciglia, occhi e labbra. \n\nI pigmenti sono bioassorbibili, sbiadiscono nel tempo e permettono modifiche estetiche. \n\nLa profondità di inserimento è minore rispetto a un tatuaggio tradizionale, rendendo l'effetto più naturale e meno indelebile.",
               "image": "logo.png"
             },
             {
@@ -173,7 +173,7 @@
               "name": "PMU eyeliner",
               "price": 180,
               "duration": "120 min",
-              "description": "Per definire e intensificare lo sguardo. \n\nPMU è l'acronimo di Permanent Make-Up (trucco permanente), una tecnica di dermopigmentazione estetica che introduce pigmenti nella pelle per definire, correggere o valorizzare sopracciglia, occhi e labbra, offrendo un effetto duraturo ma semipermanente che sbiadisce nel tempo.\n\nI pigmenti sono bioassorbibili, sbiadiscono nel tempo e permettono modifiche estetiche. \n\nLa profondità di inserimento è minore rispetto a un tatuaggio tradizionale, rendendo l'effetto più naturale e meno indelebile.",
+              "description": "Per definire e intensificare lo sguardo. \n\nPMU è l'acronimo di Permanent Make-Up (trucco permanente), una tecnica di dermopigmentazione estetica che introduce pigmenti nella pelle per definire, correggere o valorizzare sopracciglia, occhi e labbra.\n\nI pigmenti sono bioassorbibili, sbiadiscono nel tempo e permettono modifiche estetiche. \n\nLa profondità di inserimento è minore rispetto a un tatuaggio tradizionale, rendendo l'effetto più naturale e meno indelebile.",
               "image": "logo.png"
             },
             {
@@ -225,7 +225,7 @@
               "image": "logo.png"
             },
             {
-              "name": "Laminazione ciglia refill",
+              "name": "Laminazione ciglia refill*",
               "price": 45,
               "duration": "60 min",
               "description": "Si intende refill se effettuato tra le 6 e le 8 settimane dalla seduta precedente.",
@@ -317,5 +317,4 @@
       ]
     }
   ]
-
 }

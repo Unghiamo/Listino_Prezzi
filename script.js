@@ -140,6 +140,9 @@ function openTreatmentModal(t, categoria, sezione) {
     t.description.replace(/\n/g, "<br>");
   document.getElementById("modalImage").src = t.image;
   modal.classList.add("open");
+  // Aggiunge uno stato alla history per intercettare il back
+  history.pushState({ modal: true }, "");
+
 
   console.log("MODAL APERTO", t.name, categoria, sezione);
 
@@ -170,12 +173,24 @@ function closeTreatmentModal() {
     modalOpenTime = null;
   }
   modal.classList.remove("open");
+  // Evita di accumulare history inutili
+  if (history.state && history.state.modal) {
+    history.back();
+  }
+
 }
 
 closeModal.onclick = closeTreatmentModal;
 modal.onclick = e => {
   if (e.target === modal) closeTreatmentModal();
 };
+
+window.addEventListener("popstate", () => {
+  if (modal.classList.contains("open")) {
+    closeTreatmentModal();
+  }
+});
+
 
 /* ---------------- INIZIALIZZA TRACCIAMENTO FILTRI E TOGGLE ---------------- */
 function initTracking() {
