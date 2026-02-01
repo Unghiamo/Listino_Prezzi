@@ -1,5 +1,5 @@
 :root {
-  --bg-color: radial-gradient(circle at top,rgba(255,255,255,0.18),transparent 55%), linear-gradient(180deg,#1028C9 0%,#09197E 55%,#050B3A 100%);
+  --bg-color: linear-gradient(180deg,#1028C9 0%,#09197E 35%,#09197E 65%,#050B3A 100%);
   --card-bg: rgba(255,255,255,0.12);
   --card-bg-active: rgba(255,255,255,0.18);
   --text-main: #ffffff;
@@ -11,12 +11,13 @@
 * { box-sizing: border-box; }
 
 html {
-  background-color: #09197E;
+  background-color: #050B3A; /* colore finale */
 }
 
 body {
   margin: 0;
   font-family: 'Inter', system-ui, sans-serif;
+  min-height: 100svh;
   line-height: 1.5;
   background-color: #09197E;   /* fallback iOS */
   background-image: var(--bg-color);
