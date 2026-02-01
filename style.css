@@ -19,7 +19,7 @@ body {
   font-family: 'Inter', system-ui, sans-serif;
   min-height: 100svh;
   line-height: 1.5;
-  background-color: #09197E;   /* fallback iOS */
+  background-color: #050B3A;   /* fallback iOS */
   background-image: var(--bg-color);
   color: var(--text-main);
   overscroll-behavior: none;
@@ -326,5 +326,6 @@ body {
 .instagram-link:hover img {
   opacity: 1;
   transform: scale(1.05);
+
 
 }
