@@ -306,7 +306,7 @@
               "image": "logo.png"
             },
             {
-              "name": "Massaggio eminfatico gambe 35′",
+              "name": "Massaggio emolinfatico gambe 35′",
               "price": 55,
               "duration": "35 min",
               "description": "Il massaggio emolinfatico gambe è una tecnica olistica e modellante che, attraverso manipolazioni lente, ritmiche e profonde, stimola la circolazione sanguigna e linfatica. \n\nAgisce efficacemente contro la ritenzione idrica, la cellulite, il gonfiore e la sensazione di pesantezza, favorendo il drenaggio dei liquidi dai tessuti e l'eliminazione delle tossine.",
@@ -317,4 +317,5 @@
       ]
     }
   ]
+
 }
