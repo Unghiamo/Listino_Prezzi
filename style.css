@@ -53,13 +53,19 @@ body {
   overflow-x: auto;
 }
 .filter-btn {
+  min-width: auto;
   padding: 12px 16px;
+  height: auto;
   font-weight: 500;
   font-size: 15px;
   border-radius: var(--radius);
   border: none;
   background: #E8DFD2;
   color: #0F3F3C;
+  display: flex;
+  align-items: center;        /* centro verticale */
+  justify-content: center;    /* centro orizzontale */
+  white-space: nowrap;        /* 🔥 niente a capo */
   cursor: pointer;
   transition: transform var(--transition), box-shadow var(--transition);
 }
