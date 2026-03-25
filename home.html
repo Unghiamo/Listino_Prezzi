@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Unghiamo | Elisa Pignatti</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <meta name="theme-color" content="#F1E4DC">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Umami Analytics -->
+  <script
+    defer
+    src="https://cloud.umami.is/script.js"
+    data-website-id="d5955fa0-bba7-43d1-929b-6f62bb11d097">
+  </script>
+</head>
+
+<body id="top">
+  <div class="menu-overlay" id="menuOverlay"></div>
+  <nav class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="menu-header">
+      <span>Menu</span>
+    </div>
+    <div class="menu-group">
+      <a href="#top" class="menu-primary" aria-current="page">Home</a>
+      <div class="menu-subnav">
+        <a href="#chi-sono" class="menu-subitem">Chi sono</a>
+        <a href="#servizi" class="menu-subitem">Cosa faccio</a>
+        <a href="#eventi" class="menu-subitem">Eventi e offerte</a>
+        <a href="#certificazioni" class="menu-subitem">Certificazioni</a>
+        <a href="#contatti" class="menu-subitem">Contatti</a>
+      </div>
+    </div>
+    <div class="menu-group">
+      <a href="index.html" class="menu-primary">Listino</a>
+    </div>
+  </nav>
+
+  <header class="header">
+    <button class="menu-toggle" id="menuToggle" aria-label="Apri menu" aria-controls="mobileMenu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <img src="logo.png" alt="Logo Unghiamo" class="logo">
+    <h1 class="site-title">Unghiamo | Elisa Pignatti</h1>
+    <div class="address">Via Giacomo Leopardi, 39 | 41019 Soliera (MO)</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Centro estetico a Soliera</p>
+        <h2>Bellezza curata, risultati naturali</h2>
+        <p class="hero-text">Manicure, gel e PMU eseguiti con precisione e attenzione.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="index.html">Scopri il listino</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="chi-sono">
+      <div class="container">
+        <div class="section-head">
+          <h2>Chi sono</h2>
+        </div>
+        <div class="about-grid">
+          <figure class="section-media">
+            <img src="Img_ChiSono.png" alt="Elisa nel suo centro estetico" class="section-photo">
+          </figure>
+          <div class="about-copy">
+            <p>Ciao, sono Elisa. La passione per smalti, colori e nail art mi accompagna da sempre, e con il tempo e' diventata il lavoro che amo fare ogni giorno.</p>
+            <p>Mi sono formata come estetista e direttore tecnico, continuando ad approfondire manicure, trucco semipermanente e laminazione con studio, pratica e formazione continua.</p>
+            <p>Nel mio spazio ti accolgo con cura, tecnica e attenzione ai dettagli, per valorizzarti in modo naturale e farti sentire bene davvero.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="servizi">
+      <div class="container">
+        <div class="section-head">
+          <h2>Cosa faccio</h2>
+        </div>
+        <div class="service-grid">
+          <div class="service-item">Manicure e ricostruzione</div>
+          <div class="service-item">Gel e semipermanente</div>
+          <div class="service-item">Nail art personalizzata</div>
+          <div class="service-item">PMU sopracciglia e labbra</div>
+          <div class="service-item">Trattamenti rinforzanti</div>
+          <div class="service-item">Consulenze beauty</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="eventi">
+      <div class="container">
+        <div class="section-head">
+          <h2>Eventi e offerte</h2>
+          <p>Workshop speciali e iniziative pensate per vivere il centro anche in modo diverso.</p>
+        </div>
+        <div class="cards" id="eventsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="certificazioni">
+      <div class="container">
+        <div class="section-head">
+          <h2>Certificazioni</h2>
+        </div>
+        <div class="cert-gallery"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contatti">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-block">
+          <h3>Contatti</h3>
+          <div class="footer-line">
+            <div class="social-row">
+              <a href="https://wa.me/393515378793" target="_blank" aria-label="Contatta su WhatsApp" onclick="window.umami && umami.track('Click WhatsApp')">
+                <img src="icons/icons8-whatsapp.svg" alt="WhatsApp">
+              </a>
+            </div>
+            <a class="footer-link" href="tel:+393515378793">+39 351 537 8793</a>
+          </div>
+          <div class="footer-line">
+            <div class="social-row">
+              <a href="https://www.instagram.com/unghiamo_" target="_blank" aria-label="Instagram" onclick="window.umami && umami.track('Click Instagram')">
+                <img src="icons/icons8-instagram.svg" alt="Instagram">
+              </a>
+            </div>
+            <a class="footer-link" href="https://www.instagram.com/unghiamo_" target="_blank" onclick="window.umami && umami.track('Click Instagram')">@unghiamo_</a>
+          </div>
+        </div>
+        <div class="footer-block">
+          <h3>Indirizzo</h3>
+          <p>Via Giacomo Leopardi, 39<br>41019 Soliera (MO)</p>
+        </div>
+        <div class="footer-block">
+          <h3>Orari</h3>
+          <p>Lun - Sab: 9:00 - 19:00</p>
+          <p>Dom: chiuso</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-note">Ricevo su appuntamento. Prenotazione consigliata.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

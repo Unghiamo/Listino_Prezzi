@@ -1,0 +1,41 @@
+{
+  "items": [
+    {
+      "type": "event",
+      "active": true,
+      "title": "Brinda ai tuoi colori",
+      "tag": "Workshop",
+      "image": "Img_WorkshopArmocromia.png",
+      "imageAlt": "Workshop Brinda ai tuoi colori",
+      "caption": "Un workshop dedicato all'armocromia con prova drappi dal vivo, aperitivo finale e una sorpresa per tutte le partecipanti.",
+      "price": "10 euro",
+      "subtitle": "19 aprile | 15:00 - 18:00",
+      "ctaLabel": "Per maggiori info vai al post Instagram",
+      "ctaUrl": "https://www.instagram.com/p/DWBsohBjKik/",
+      "ctaType": "instagram"
+    },
+    {
+      "type": "event",
+      "active": true,
+      "title": "Brinda ai tuoi colori",
+      "tag": "Workshop",
+      "image": "Img_WorkshopArmocromia.png",
+      "imageAlt": "Workshop Brinda ai tuoi colori",
+      "caption": "Un workshop dedicato all'armocromia con prova drappi dal vivo, aperitivo finale e una sorpresa per tutte le partecipanti.",
+      "price": "10 euro",
+      "subtitle": "19 aprile | 15:00 - 18:00",
+      "ctaLabel": "Per maggiori info vai al post Instagram",
+      "ctaUrl": "https://www.instagram.com/p/DWBsohBjKik/",
+      "ctaType": "instagram"
+    },
+    {
+      "type": "promo",
+      "active": true,
+      "title": "Promo semipermanente",
+      "tag": "Attiva",
+      "caption": "Applicazione semipermanente con manicure preparatoria e finish luminoso.",
+      "price": "da 30 euro",
+      "subtitle": "Su appuntamento"
+    }
+  ]
+}
