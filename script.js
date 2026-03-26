@@ -372,6 +372,7 @@ function filterCategories(id) {
 let modal = null;
 let closeModal = null;
 let modalOpenTime = null;
+let treatmentModalScrollY = 0;
 let certificateModal = null;
 let certificateViewer = null;
 let closeCertificateModalButton = null;
@@ -554,6 +555,7 @@ function openTreatmentModal(treatment, categoria, sezione) {
   document.getElementById("modalMeta").textContent = `${treatment.price}€ · ${treatment.duration}`;
   document.getElementById("modalDescription").innerHTML = treatment.description.replace(/\n/g, "<br>");
   document.getElementById("modalImage").src = treatment.image;
+  lockTreatmentModalScroll();
   modal.classList.add("open");
   history.pushState({ modal: true }, "");
 
@@ -584,10 +586,25 @@ function closeTreatmentModal() {
   }
 
   modal.classList.remove("open");
+  unlockTreatmentModalScroll();
 
   if (history.state && history.state.modal) {
     history.back();
   }
+}
+
+function lockTreatmentModalScroll() {
+  treatmentModalScrollY = window.scrollY || window.pageYOffset || 0;
+  document.body.classList.add("treatment-modal-open");
+  document.body.style.top = `-${treatmentModalScrollY}px`;
+}
+
+function unlockTreatmentModalScroll() {
+  if (!document.body.classList.contains("treatment-modal-open")) return;
+
+  document.body.classList.remove("treatment-modal-open");
+  document.body.style.top = "";
+  window.scrollTo(0, treatmentModalScrollY);
 }
 
 /* ---------------- INIZIALIZZA TRACCIAMENTO FILTRI E TOGGLE ---------------- */

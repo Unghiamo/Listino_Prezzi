@@ -597,6 +597,8 @@ body {
   align-items: center;
   justify-content: center;
   z-index: 1200;
+  overflow: hidden;
+  overscroll-behavior: contain;
 }
 .modal.open {
   display: flex;
@@ -611,6 +613,8 @@ body {
   height: 100%;
   padding: 20px;
   overflow-y: auto;
+  overscroll-behavior-y: contain;
+  -webkit-overflow-scrolling: touch;
   animation: modalUp 0.25s ease;
 }
 @keyframes modalUp {
@@ -1191,6 +1195,13 @@ body.menu-open {
 
 body.cert-modal-open {
   overflow: hidden;
+}
+
+body.treatment-modal-open {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  overscroll-behavior: none;
 }
 
 .cert-modal-content {
