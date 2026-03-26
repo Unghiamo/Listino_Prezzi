@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initMobileMenu();
   initModal();
   initCertificateModal();
+  initCertificateAutoScroll();
   initListino();
   initEvents();
 });
@@ -374,6 +375,10 @@ let modalOpenTime = null;
 let certificateModal = null;
 let certificateViewer = null;
 let closeCertificateModalButton = null;
+let certificateGallery = null;
+let certificateAutoScrollId = null;
+let certificateAutoScrollResumeTimeout = null;
+let certificateAutoScrollDirection = 1;
 
 function initModal() {
   modal = document.getElementById("treatmentModal");
@@ -419,9 +424,101 @@ function initCertificateModal() {
   });
 }
 
+function initCertificateAutoScroll() {
+  certificateGallery = document.getElementById("certGallery");
+  if (!certificateGallery) return;
+
+  const stopEvents = ["touchstart", "pointerdown", "mouseenter"];
+  const resumeEvents = ["touchend", "pointerup", "mouseleave"];
+
+  stopEvents.forEach(eventName => {
+    certificateGallery.addEventListener(eventName, stopCertificateAutoScroll, { passive: true });
+  });
+
+  resumeEvents.forEach(eventName => {
+    certificateGallery.addEventListener(eventName, queueCertificateAutoScrollResume, { passive: true });
+  });
+
+  window.addEventListener("resize", queueCertificateAutoScrollResume);
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) {
+      stopCertificateAutoScroll();
+    } else {
+      queueCertificateAutoScrollResume();
+    }
+  });
+
+  queueCertificateAutoScrollResume();
+}
+
+function queueCertificateAutoScrollResume() {
+  stopCertificateAutoScroll();
+
+  clearTimeout(certificateAutoScrollResumeTimeout);
+  certificateAutoScrollResumeTimeout = setTimeout(() => {
+    startCertificateAutoScroll();
+  }, 1200);
+}
+
+function startCertificateAutoScroll() {
+  if (!certificateGallery) return;
+  if (window.innerWidth >= 768) return;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  const maxScroll = certificateGallery.scrollWidth - certificateGallery.clientWidth;
+  if (maxScroll <= 0) return;
+
+  if (certificateAutoScrollId) return;
+
+  certificateAutoScrollDirection = certificateGallery.scrollLeft >= maxScroll ? -1 : 1;
+  let lastTimestamp = 0;
+
+  const step = timestamp => {
+    if (!certificateGallery || !certificateAutoScrollId) return;
+
+    if (!lastTimestamp) {
+      lastTimestamp = timestamp;
+    }
+
+    const maxOffset = certificateGallery.scrollWidth - certificateGallery.clientWidth;
+    if (maxOffset <= 0 || window.innerWidth >= 768 || document.body.classList.contains("cert-modal-open")) {
+      stopCertificateAutoScroll();
+      return;
+    }
+
+    const delta = timestamp - lastTimestamp;
+    lastTimestamp = timestamp;
+    const distance = delta * 0.035;
+    let nextScroll = certificateGallery.scrollLeft + (distance * certificateAutoScrollDirection);
+
+    if (nextScroll <= 0) {
+      nextScroll = 0;
+      certificateAutoScrollDirection = 1;
+    } else if (nextScroll >= maxOffset) {
+      nextScroll = maxOffset;
+      certificateAutoScrollDirection = -1;
+    }
+
+    certificateGallery.scrollLeft = nextScroll;
+    certificateAutoScrollId = requestAnimationFrame(step);
+  };
+
+  certificateAutoScrollId = requestAnimationFrame(step);
+}
+
+function stopCertificateAutoScroll() {
+  clearTimeout(certificateAutoScrollResumeTimeout);
+
+  if (certificateAutoScrollId) {
+    cancelAnimationFrame(certificateAutoScrollId);
+    certificateAutoScrollId = null;
+  }
+}
+
 function openCertificateModal(imagePath, label) {
   if (!certificateModal || !certificateViewer || !imagePath) return;
 
+  stopCertificateAutoScroll();
   certificateViewer.src = imagePath;
   certificateViewer.alt = label ? label.replace("Ingrandisci ", "") : "Attestato ingrandito";
   certificateModal.classList.add("open");
@@ -436,6 +533,7 @@ function closeCertificateModal() {
   certificateModal.setAttribute("aria-hidden", "true");
   certificateViewer.src = "";
   document.body.classList.remove("cert-modal-open");
+  queueCertificateAutoScrollResume();
 }
 
 function openTreatmentModal(treatment, categoria, sezione) {
