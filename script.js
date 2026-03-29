@@ -1,4 +1,4 @@
-const siteConfig = window.SITE_CONFIG || {};
+﻿const siteConfig = window.SITE_CONFIG || {};
 const analyticsState = {
   enabled: Boolean(siteConfig.umamiEnabled),
   websiteId: siteConfig.umamiWebsiteId || "",
@@ -111,6 +111,9 @@ function initListino() {
       buildTreatments(data.categories);
       filterCategories("all");
       initTracking();
+    })
+    .catch(() => {
+      treatments.innerHTML = '<p class="events-empty">Impossibile caricare il listino in questo momento.</p>';
     });
 }
 
@@ -289,6 +292,104 @@ function buildFilters(categories) {
 }
 
 /* ---------------- TRATTAMENTI ---------------- */
+function formatPrice(value) {
+  if (value === null || value === undefined || value === "") return "";
+
+  if (typeof value === "number") {
+    return `${String(value).replace(".", ",")}\u20AC`;
+  }
+
+  const text = String(value).trim();
+  if (!text) return "";
+  if (text.includes("\u20AC")) return text;
+  if (text.startsWith("da ") || text.startsWith("+")) return `${text}\u20AC`;
+  return `${text}\u20AC`;
+}
+
+function formatFromPrice(value) {
+  if (value === null || value === undefined || value === "") return "";
+
+  if (typeof value === "number") {
+    return `da ${String(value).replace(".", ",")}\u20AC`;
+  }
+
+  const text = String(value).trim();
+  if (!text) return "";
+  if (text.includes("\u20AC")) return text;
+  if (text.startsWith("da ")) return `${text}\u20AC`;
+  return `da ${text}\u20AC`;
+}
+
+function createTreatmentRow(treatment, categoryLabel, sectionTitle) {
+  const item = document.createElement("button");
+  item.type = "button";
+  item.className = "treatment";
+  item.onclick = () => openTreatmentModal(treatment, categoryLabel, sectionTitle);
+
+  const displayName = treatment.label || treatment.name;
+  item.innerHTML = `
+    <div class="treatment-header">
+      <span class="treatment-name">
+        ${displayName}
+        <span class="open-icon info-icon">i</span>
+      </span>
+      <span class="price">${formatPrice(treatment.price)}</span>
+    </div>
+  `;
+
+  return item;
+}
+
+function createTreatmentGroup(group, categoryLabel, sectionTitle) {
+  const wrapper = document.createElement("div");
+  wrapper.className = "treatment-group";
+
+  const toggle = document.createElement("button");
+  toggle.type = "button";
+  toggle.className = "treatment-group-toggle";
+  toggle.innerHTML = `
+    <span class="treatment-group-title">${group.title}</span>
+    <span class="treatment-group-right">
+      <span class="price">${formatFromPrice(group.fromPrice)}</span>
+      <span class="group-toggle">\u203A</span>
+    </span>
+  `;
+
+  const content = document.createElement("div");
+  content.className = "treatment-group-content";
+
+  (group.treatments || []).forEach(treatment => {
+    content.appendChild(createTreatmentRow(treatment, categoryLabel, sectionTitle));
+  });
+
+  toggle.addEventListener("click", () => {
+    const wasOpen = wrapper.classList.contains("open");
+    const parent = wrapper.parentElement;
+
+    if (parent) {
+      Array.from(parent.children).forEach(sibling => {
+        if (sibling !== wrapper && sibling.classList.contains("treatment-group")) {
+          sibling.classList.remove("open");
+        }
+      });
+    }
+
+    wrapper.classList.toggle("open");
+
+    trackUmamiEvent("Sottocategoria toggle", {
+      categoria: categoryLabel,
+      sezione: sectionTitle,
+      sottocategoria: group.title,
+      aperta: !wasOpen
+    });
+  });
+
+  wrapper.appendChild(toggle);
+  wrapper.appendChild(content);
+
+  return wrapper;
+}
+
 function buildTreatments(categories) {
   const container = document.getElementById("treatments");
   container.innerHTML = "";
@@ -304,9 +405,9 @@ function buildTreatments(categories) {
       header.innerHTML = `
         <div class="left">
           <span>${section.title}</span>
-          ${section.fromPrice ? `<span class="section-price">(da ${section.fromPrice}€)</span>` : ""}
+          ${section.fromPrice ? `<span class="section-price">(${formatFromPrice(section.fromPrice)})</span>` : ""}
         </div>
-        <span class="toggle">›</span>
+        <span class="category-toggle">\u203A</span>
       `;
 
       header.onclick = () => {
@@ -325,30 +426,21 @@ function buildTreatments(categories) {
       const content = document.createElement("div");
       content.className = "category-content";
 
-      section.treatments.forEach(treatment => {
-        const item = document.createElement("div");
-        item.className = "treatment";
-        item.onclick = () => openTreatmentModal(treatment, category.label, section.title);
+      (section.items || []).forEach(item => {
+        if (item.type === "group") {
+          content.appendChild(createTreatmentGroup(item, category.label, section.title));
+          return;
+        }
 
-        item.innerHTML = `
-          <div class="treatment-header">
-            <span class="treatment-name">
-              ${treatment.name}
-              <span class="open-icon info-icon">i</span>
-            </span>
-            <span class="price">${treatment.price}€</span>
-          </div>
-        `;
-
-        content.appendChild(item);
+        content.appendChild(createTreatmentRow(item, category.label, section.title));
       });
 
-      if (section.notes) {
+      if (Array.isArray(section.notes) && section.notes.length) {
         const notesWrap = document.createElement("div");
         notesWrap.className = "section-note";
-        Object.entries(section.notes).forEach(([key, text]) => {
+        section.notes.forEach(noteText => {
           const note = document.createElement("div");
-          note.innerHTML = `${key} ${text.replace(/\n/g, "<br>")}`;
+          note.innerHTML = noteText.replace(/\n/g, "<br>");
           notesWrap.appendChild(note);
         });
         content.appendChild(notesWrap);
@@ -552,9 +644,11 @@ function openTreatmentModal(treatment, categoria, sezione) {
   if (!modal) return;
 
   document.getElementById("modalTitle").textContent = treatment.name;
-  document.getElementById("modalMeta").textContent = `${treatment.price}€ · ${treatment.duration}`;
+  const metaParts = [formatPrice(treatment.price), treatment.duration].filter(Boolean);
+  document.getElementById("modalMeta").textContent = metaParts.join(" \u00B7 ");
   document.getElementById("modalDescription").innerHTML = treatment.description.replace(/\n/g, "<br>");
   document.getElementById("modalImage").src = treatment.image;
+  document.getElementById("modalImage").alt = treatment.name;
   lockTreatmentModalScroll();
   modal.classList.add("open");
   history.pushState({ modal: true }, "");
@@ -612,3 +706,4 @@ function initTracking() {
   // Filtri gia' tracciati nel buildFilters con trackUmamiEvent
   // Toggle categorie gia' tracciati nel buildTreatments con header.onclick
 }
+
