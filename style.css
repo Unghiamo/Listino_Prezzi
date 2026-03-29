@@ -448,6 +448,13 @@
 html {
   background-color: var(--footer-color);
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a,
+button,
+[role="button"] {
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -839,10 +846,17 @@ a {
   text-decoration: none;
 }
 
-a:focus-visible,
-button:focus-visible {
-  outline: 2px solid var(--ring);
-  outline-offset: 2px;
+a:focus,
+button:focus {
+  outline: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
 }
 
 h1,
