@@ -1,0 +1,27 @@
+{
+  "items": [
+    {
+      "type": "event",
+      "active": true,
+      "title": "Brinda ai tuoi colori",
+      "tag": "Quasi al completo",
+      "image": "Immagini/Eventi/Img_WorkshopArmocromia.png",
+      "imageAlt": "Workshop Brinda ai tuoi colori",
+      "caption": "Un workshop dedicato all'armocromia con prova drappi dal vivo, aperitivo finale e una sorpresa per tutte le partecipanti.",
+      "price": "19 aprile | 15:00 - 18:00",
+      "subtitle": "Prenotazione obbligatoria",
+      "ctaLabel": "Per maggiori info vai al post Instagram",
+      "ctaUrl": "https://www.instagram.com/p/DWBsohBjKik/",
+      "ctaType": "instagram"
+    },
+    {
+      "type": "promo",
+      "active": false,
+      "title": "Promo semipermanente",
+      "tag": "Attiva",
+      "caption": "Applicazione semipermanente con manicure preparatoria e finish luminoso.",
+      "price": "da 30 euro",
+      "subtitle": "Su appuntamento"
+    }
+  ]
+}

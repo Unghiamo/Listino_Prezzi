@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Unghiamo | Elisa Pignatti</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <meta name="theme-color" content="#F1E4DC">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <script src="site-config.js"></script>
+
+</head>
+
+<body data-page="listino">
+  <div class="menu-overlay" id="menuOverlay"></div>
+  <nav class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="menu-header">
+      <span>Menu</span>
+    </div>
+    <div class="menu-group">
+      <a href="home.html#top" class="menu-primary">Home</a>
+      <div class="menu-subnav">
+        <a href="home.html#chi-sono" class="menu-subitem">Chi sono</a>
+        <a href="home.html#eventi" class="menu-subitem">Eventi e offerte</a>
+        <a href="home.html#certificazioni" class="menu-subitem">Certificazioni</a>
+        <a href="home.html#contatti" class="menu-subitem">Contatti</a>
+      </div>
+    </div>
+    <div class="menu-group">
+      <a href="index.html" class="menu-primary" aria-current="page">Listino</a>
+    </div>
+  </nav>
+
+  <header class="header">
+    <button class="menu-toggle" id="menuToggle" aria-label="Apri menu" aria-controls="mobileMenu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <img src="Immagini/Generiche/logo.png" alt="Logo Unghiamo" class="logo">
+    <h1 class="site-title">Unghiamo | Elisa Pignatti</h1>
+    <div class="address">Via Giacomo Leopardi, 39 | 41019 Soliera (MO)</div>
+  </header>
+
+  <section class="page-hero page-hero-list">
+    <div class="container">
+      <h2>Listino trattamenti</h2>
+    </div>
+  </section>
+
+  <!-- FILTRI -->
+  <nav class="filters" id="filters"></nav>
+
+  <!-- TRATTAMENTI -->
+  <main class="treatments" id="treatments"></main>
+
+  <footer class="site-footer" id="contatti">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-block">
+          <h3>Contatti</h3>
+          <div class="footer-line">
+            <div class="social-row">
+              <a
+                href="https://wa.me/393515378793"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Contatta su WhatsApp"
+                data-contact-channel="whatsapp"
+                data-contact-source="footer_icon"
+              >
+                <img src="icons/icons8-whatsapp.svg" alt="WhatsApp">
+              </a>
+            </div>
+            <a class="footer-link" href="tel:+393515378793" data-contact-channel="phone" data-contact-source="footer_text">+39 351 537 8793</a>
+          </div>
+          <div class="footer-line">
+            <div class="social-row">
+              <a
+                href="https://www.instagram.com/unghiamo_"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                data-contact-channel="instagram"
+                data-contact-source="footer_icon"
+              >
+                <img src="icons/icons8-instagram.svg" alt="Instagram">
+              </a>
+            </div>
+            <a
+              class="footer-link"
+              href="https://www.instagram.com/unghiamo_"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-contact-channel="instagram"
+              data-contact-source="footer_text"
+            >@unghiamo_</a>
+          </div>
+        </div>
+        <div class="footer-block">
+          <h3>Indirizzo</h3>
+          <p>Via Giacomo Leopardi, 39<br>41019 Soliera (MO)</p>
+        </div>
+        <div class="footer-block">
+          <h3>Orari</h3>
+          <p>Lun - Gio: 9:30 - 19:30<br>Ven: 14:00 - 19:30<br>Sab: 8:30 - 13:30<br>Dom: chiuso</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-note">Ricevo solo su appuntamento.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL TRATTAMENTO -->
+  <div class="modal" id="treatmentModal">
+    <div class="modal-content">
+      <button class="modal-close" id="closeModal" aria-label="Chiudi">&times;</button>
+
+      <img id="modalImage" class="modal-image" src="" alt="">
+
+      <h2 id="modalTitle"></h2>
+      <div class="modal-meta" id="modalMeta"></div>
+      <p id="modalDescription"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
