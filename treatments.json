@@ -39,8 +39,8 @@
 									"name": "Semipermanente corto",
 									"label": "Corto",
 									"price": 44,
-									"duration": "60 min",
-									"description": "Il semipermanente è uno smalto ibrido, a metà tra quello tradizionale e il gel, che si applica sull'unghia naturale e si asciuga sotto lampada LED. \n\nGarantisce alta brillantezza e resistenza alle sbeccature, mantenendo l'unghia naturale senza bisogno di ricostruzioni e allungamenti.",
+									"duration": "75 min",
+									"description": "Il semipermanente è uno smalto ibrido, a metà tra quello tradizionale e il gel, che si applica sull'unghia naturale e si asciuga sotto lampada LED. \n\nGarantisce alta brillantezza e resistenza alle sbeccature, mantenendo l'unghia naturale senza bisogno di ricostruzioni e allungamenti. \n\nLunghezza < 1,5 cm.",
 									"image": "Immagini/Generiche/logo.png"
 								},
 								{
@@ -48,8 +48,8 @@
 									"name": "Semipermanente medio",
 									"label": "Medio",
 									"price": 46,
-									"duration": "60 min",
-									"description": "Il semipermanente è uno smalto ibrido, a metà tra quello tradizionale e il gel, che si applica sull'unghia naturale e si asciuga sotto lampada LED. \n\nGarantisce alta brillantezza e resistenza alle sbeccature, mantenendo l'unghia naturale senza bisogno di ricostruzioni e allungamenti.",
+									"duration": "75 min",
+									"description": "Il semipermanente è uno smalto ibrido, a metà tra quello tradizionale e il gel, che si applica sull'unghia naturale e si asciuga sotto lampada LED. \n\nGarantisce alta brillantezza e resistenza alle sbeccature, mantenendo l'unghia naturale senza bisogno di ricostruzioni e allungamenti. \n\nLunghezza tra 1,5 cm e 2 cm.",
 									"image": "Immagini/Generiche/logo.png"
 								},
 								{
@@ -57,8 +57,8 @@
 									"name": "Semipermanente lungo",
 									"label": "Lungo",
 									"price": 48,
-									"duration": "60 min",
-									"description": "Il semipermanente è uno smalto ibrido, a metà tra quello tradizionale e il gel, che si applica sull'unghia naturale e si asciuga sotto lampada LED. \n\nGarantisce alta brillantezza e resistenza alle sbeccature, mantenendo l'unghia naturale senza bisogno di ricostruzioni e allungamenti.",
+									"duration": "75 min",
+									"description": "Il semipermanente è uno smalto ibrido, a metà tra quello tradizionale e il gel, che si applica sull'unghia naturale e si asciuga sotto lampada LED. \n\nGarantisce alta brillantezza e resistenza alle sbeccature, mantenendo l'unghia naturale senza bisogno di ricostruzioni e allungamenti. \n\nLunghezza > 2 cm.",
 									"image": "Immagini/Generiche/logo.png"
 								}
 							],
@@ -73,8 +73,8 @@
 									"name": "Semipermanente rinforzato corto",
 									"label": "Corto",
 									"price": 48,
-									"duration": "60 min",
-									"description": "Il semipermanente rinforzato è un trattamento che, grazie a una base specifica, dona maggiore solidità all’unghia naturale, migliorandone l’aspetto e la resistenza, per un risultato curato, uniforme e naturale.",
+									"duration": "75 min",
+									"description": "Il semipermanente rinforzato è un trattamento che, grazie a una base specifica, dona maggiore solidità all’unghia naturale, migliorandone l’aspetto e la resistenza, per un risultato curato, uniforme e naturale. \n\nLunghezza < 1,5 cm.",
 									"image": "Immagini/Generiche/logo.png"
 								},
 								{
@@ -82,8 +82,8 @@
 									"name": "Semipermanente rinforzato medio",
 									"label": "Medio",
 									"price": 50,
-									"duration": "60 min",
-									"description": "Il semipermanente rinforzato è un trattamento che, grazie a una base specifica, dona maggiore solidità all’unghia naturale, migliorandone l’aspetto e la resistenza, per un risultato curato, uniforme e naturale.",
+									"duration": "75 min",
+									"description": "Il semipermanente rinforzato è un trattamento che, grazie a una base specifica, dona maggiore solidità all’unghia naturale, migliorandone l’aspetto e la resistenza, per un risultato curato, uniforme e naturale. \n\nLunghezza tra 1,5 cm e 2 cm.",
 									"image": "Immagini/Generiche/logo.png"
 								},
 								{
@@ -91,8 +91,8 @@
 									"name": "Semipermanente rinforzato lungo",
 									"label": "Lungo",
 									"price": 52,
-									"duration": "60 min",
-									"description": "Il semipermanente rinforzato è un trattamento che, grazie a una base specifica, dona maggiore solidità all’unghia naturale, migliorandone l’aspetto e la resistenza, per un risultato curato, uniforme e naturale.",
+									"duration": "75 min",
+									"description": "Il semipermanente rinforzato è un trattamento che, grazie a una base specifica, dona maggiore solidità all’unghia naturale, migliorandone l’aspetto e la resistenza, per un risultato curato, uniforme e naturale. \n\nLunghezza > 2 cm.",
 									"image": "Immagini/Generiche/logo.png"
 								}
 							],
@@ -121,8 +121,8 @@
 									"name": "Copertura in gel (prima applicazione) - Mini",
 									"label": "Mini",
 									"price": 55,
-									"duration": "TO CHANGE",
-									"description": "La copertura in gel è un trattamento estetico che rinforza l'unghia naturale stendendo uno strato di gel costruttore, senza allungarla. \nSi effettua su unghie prive di prodotto precedente. \n\nProtegge le unghie fragili e corregge le imperfezioni dell'unghia, con un effetto naturale e resistente agli urti. \n\nSi differenzia dalla ricostruzione perché mantiene la lunghezza naturale.",
+									"duration": "90 min",
+									"description": "Lunghezza sotto il polpastrello. \n\nLa copertura in gel è un trattamento estetico che rinforza l'unghia naturale stendendo uno strato di gel costruttore, senza allungarla. \nSi effettua su unghie prive di prodotto precedente. \n\nProtegge le unghie fragili e corregge le imperfezioni dell'unghia, con un effetto naturale e resistente agli urti. \n\nSi differenzia dalla ricostruzione perché mantiene la lunghezza naturale.",
 									"image": "Immagini/Generiche/logo.png"
 								},
 								{
@@ -130,8 +130,8 @@
 									"name": "Copertura in gel (prima applicazione) - Corta",
 									"label": "Corta",
 									"price": 60,
-									"duration": "TO CHANGE",
-									"description": "La copertura in gel è un trattamento estetico che rinforza l'unghia naturale stendendo uno strato di gel costruttore, senza allungarla. \nSi effettua su unghie prive di prodotto precedente. \n\nProtegge le unghie fragili e corregge le imperfezioni dell'unghia, con un effetto naturale e resistente agli urti. \n\nSi differenzia dalla ricostruzione perché mantiene la lunghezza naturale.",
+									"duration": "90 min",
+									"description": "Lunghezza < 1,5 cm. \n\nLa copertura in gel è un trattamento estetico che rinforza l'unghia naturale stendendo uno strato di gel costruttore, senza allungarla. \nSi effettua su unghie prive di prodotto precedente. \n\nProtegge le unghie fragili e corregge le imperfezioni dell'unghia, con un effetto naturale e resistente agli urti. \n\nSi differenzia dalla ricostruzione perché mantiene la lunghezza naturale.",
 									"image": "Immagini/Generiche/logo.png"
 								},
 								{
@@ -139,8 +139,8 @@
 									"name": "Copertura in gel (prima applicazione) - Media",
 									"label": "Media",
 									"price": 65,
-									"duration": "TO CHANGE",
-									"description": "La copertura in gel è un trattamento estetico che rinforza l'unghia naturale stendendo uno strato di gel costruttore, senza allungarla. \nSi effettua su unghie prive di prodotto precedente. \n\nProtegge le unghie fragili e corregge le imperfezioni dell'unghia, con un effetto naturale e resistente agli urti. \n\nSi differenzia dalla ricostruzione perché mantiene la lunghezza naturale.",
+									"duration": "105 min",
+									"description": "Lunghezza 1,5 cm - 2 cm. \n\nLa copertura in gel è un trattamento estetico che rinforza l'unghia naturale stendendo uno strato di gel costruttore, senza allungarla. \nSi effettua su unghie prive di prodotto precedente. \n\nProtegge le unghie fragili e corregge le imperfezioni dell'unghia, con un effetto naturale e resistente agli urti. \n\nSi differenzia dalla ricostruzione perché mantiene la lunghezza naturale.",
 									"image": "Immagini/Generiche/logo.png"
 								},
 								{
@@ -148,8 +148,8 @@
 									"name": "Copertura in gel (prima applicazione) - Lunga",
 									"label": "Lunga",
 									"price": 70,
-									"duration": "TO CHANGE",
-									"description": "La copertura in gel è un trattamento estetico che rinforza l'unghia naturale stendendo uno strato di gel costruttore, senza allungarla. \nSi effettua su unghie prive di prodotto precedente. \n\nProtegge le unghie fragili e corregge le imperfezioni dell'unghia, con un effetto naturale e resistente agli urti. \n\nSi differenzia dalla ricostruzione perché mantiene la lunghezza naturale.",
+									"duration": "105 min",
+									"description": "Lunghezza > 2 cm. \n\nLa copertura in gel è un trattamento estetico che rinforza l'unghia naturale stendendo uno strato di gel costruttore, senza allungarla. \nSi effettua su unghie prive di prodotto precedente. \n\nProtegge le unghie fragili e corregge le imperfezioni dell'unghia, con un effetto naturale e resistente agli urti. \n\nSi differenzia dalla ricostruzione perché mantiene la lunghezza naturale.",
 									"image": "Immagini/Generiche/logo.png"
 								}
 							],
@@ -164,8 +164,8 @@
 									"name": "Refill mini",
 									"label": "Mini",
 									"price": 55,
-									"duration": "TO CHANGE",
-									"description": "Lunghezza mini. Da effettuare ogni mese, per coprire la ricrescita naturale.",
+									"duration": "90 min",
+									"description": "Lunghezza sotto il polpastrello. \n\nDa effettuare ogni mese, per coprire la ricrescita naturale.",
 									"image": "Immagini/Generiche/logo.png"
 								},
 								{
@@ -173,8 +173,8 @@
 									"name": "Refill corto",
 									"label": "Corto",
 									"price": 60,
-									"duration": "75 min",
-									"description": "Lunghezza <1,5 cm. \nDa effettuare ogni mese, per coprire la ricrescita naturale.",
+									"duration": "90 min",
+									"description": "Lunghezza <1,5 cm. \n\nDa effettuare ogni mese, per coprire la ricrescita naturale.",
 									"image": "Immagini/Generiche/logo.png"
 								},
 								{
@@ -182,8 +182,8 @@
 									"name": "Refill medio",
 									"label": "Medio",
 									"price": 65,
-									"duration": "90 min",
-									"description": "Lunghezza tra 1,5 cm e 2 cm. \nDa effettuare ogni mese, per coprire la ricrescita naturale.",
+									"duration": "105 min",
+									"description": "Lunghezza tra 1,5 cm e 2 cm. \n\nDa effettuare ogni mese, per coprire la ricrescita naturale.",
 									"image": "Immagini/Generiche/logo.png"
 								},
 								{
@@ -192,7 +192,7 @@
 									"label": "Lungo",
 									"price": 70,
 									"duration": "105 min",
-									"description": "Lunghezza >2 cm. \nDa effettuare ogni mese, per coprire la ricrescita naturale.",
+									"description": "Lunghezza >2 cm. \n\nDa effettuare ogni mese, per coprire la ricrescita naturale.",
 									"image": "Immagini/Generiche/logo.png"
 								}
 							],
@@ -201,7 +201,7 @@
 					],
 					"fromPrice": 55,
 					"notes": [
-						"Tutti i trattamenti sono comprensivi di nail art base.\n\nPer nail art più complesse potrebbe essere richiesto un supplemento.\nIl french è compreso nel prezzo solo se eseguito su base gel.\n\nTutti i refill sono da intendersi correttivi, poiché lavoro solo con tecnica slim, natural slim e balance."
+						"Tutti i refill sono da intendersi correttivi, poiché lavoro solo con tecnica slim, natural slim e balance."
 					]
 				},
 				{
@@ -219,7 +219,7 @@
 							"type": "treatment",
 							"name": "Ricostruzione onicofagia",
 							"price": 75,
-							"duration": "TO CHANGE",
+							"duration": "90 min",
 							"description": "La ricostruzione unghie è un trattamento estetico professionale finalizzato all'allungamento delle unghie naturali. \n\nQuesta tecnica corregge le imperfezioni, rinforza le unghie fragili e risolve l'onicofagia.",
 							"image": "Immagini/Generiche/logo.png"
 						}
