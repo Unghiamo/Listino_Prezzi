@@ -443,12 +443,14 @@
 
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
 
 html {
   background-color: var(--footer-color);
   scroll-behavior: smooth;
-  -webkit-tap-highlight-color: transparent;
 }
 
 a,
@@ -856,6 +858,33 @@ button:focus {
   button:focus-visible {
     outline: 2px solid var(--ring);
     outline-offset: 2px;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  a,
+  button,
+  [role="button"],
+  .filter-btn,
+  .category-header,
+  .treatment,
+  .treatment-group-toggle,
+  .menu-toggle,
+  .cert-zoom,
+  .insta-post,
+  .btn {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  a:focus,
+  a:focus-visible,
+  button:focus,
+  button:focus-visible,
+  [role="button"]:focus,
+  [role="button"]:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
   }
 }
 
