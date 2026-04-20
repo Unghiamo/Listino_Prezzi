@@ -6,6 +6,8 @@ const analyticsState = {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
+  if (applyLandingPreference()) return;
+
   initAnalytics();
   initMobileMenu();
   initModal();
@@ -94,6 +96,30 @@ function trackCertificateOpen(label) {
   trackUmamiEvent("certificate_open", buildTrackingProps({
     certificate: certificateName || "Attestato"
   }));
+}
+
+function getDefaultLandingPage() {
+  return siteConfig.defaultLandingPage === "home" ? "home" : "listino";
+}
+
+function applyLandingPreference() {
+  const currentPage = getCurrentPageName();
+  if (currentPage !== "listino") return false;
+
+  const params = new URLSearchParams(window.location.search);
+  const forcedView = params.get("view");
+  if (forcedView === "listino") return false;
+  if (forcedView === "home") {
+    window.location.replace("home.html");
+    return true;
+  }
+
+  if (getDefaultLandingPage() === "home") {
+    window.location.replace("home.html");
+    return true;
+  }
+
+  return false;
 }
 
 /* ---------------- MENU MOBILE ---------------- */
