@@ -16,7 +16,7 @@
     },
     {
       "type": "event",
-      "active": true,
+      "active": false,
       "title": "Giornata di consulenza di Armocromia",
       "tag": "Posti limitati",
       "image": "Immagini/Eventi/Img_ConsulenzaArmocromia.jpeg",
