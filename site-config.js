@@ -1,5 +1,5 @@
 window.SITE_CONFIG = {
-  umamiEnabled: false,
+  umamiEnabled: true,
   umamiWebsiteId: "d5955fa0-bba7-43d1-929b-6f62bb11d097",
   // toggle rapido: "listino" oppure "home"
   defaultLandingPage: "home",
@@ -7,7 +7,7 @@ window.SITE_CONFIG = {
     // "auto" segue le date, "manual" usa selectedTheme, "off" usa il tema normale.
     mode: "auto",
     // Pulsante per provare i temi in sviluppo; impostare false prima del push production.
-    showThemePreviewButton: true,
+    showThemePreviewButton: false,
     selectedTheme: "halloween",
     // Date annuali nel formato MM-DD; la data finale è inclusa.
     schedule: [
